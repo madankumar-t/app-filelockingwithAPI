@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Lock Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>S3 Website Hosting</h1>
+    <div class="section">
+      <label for="fileInput">File Upload:</label>
+      <input type="file" id="fileInput">
+      <button onclick="handleUpload()">Upload & Lock</button>
+    </div>
+    <div class="section">
+      <button onclick="listItems()">List Items</button>
+      <button onclick="getLockStatus()">Get Lock Status</button>
+    </div>
+    <div class="section">
+      <input type="text" id="lockFileId" placeholder="File ID to lock">
+      <button onclick="lockFile()">Lock</button>
+    </div>
+    <div class="section">
+      <input type="text" id="unlockFileId" placeholder="File ID to unlock">
+      <button onclick="unlockFile()">Unlock</button>
+    </div>
+    <pre id="output"></pre>
+  </div>
+</body>
+</html>
